@@ -1,0 +1,24 @@
+<body>
+  <div class="container">
+    <h1>Life Cycle Hook</h1>
+    <button (click)="toggle()">Hid/Show child</button>
+    <br />
+    <div>
+      <h1 *ngIf="displayChild">{{message}}</h1>
+    </div>
+  </div>
+</body>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+  }
+
+  .container {
+    display: flexbox;
+    justify-content: center;
+  }
+</style>
